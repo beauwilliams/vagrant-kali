@@ -13,15 +13,15 @@ Vagrant.configure(2) do |config|
     config.timezone.value = settings["vm"]["timezone"]
   end
 
-  # mounts
+  # extra mounts
   # config.vm.synced_folder "./dotfiles", "/home/vagrant/dotfiles"
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui = settings["vm"]["gui"]
 
-    # auto-NAT
     vb.cpus = settings["vm"]["cpus"]
     vb.memory = settings["vm"]["memory"]
+    # auto-NAT
     vb.customize [
       'modifyvm', :id,
       '--natdnshostresolver1', 'on',
