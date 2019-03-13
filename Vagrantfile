@@ -19,6 +19,7 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
     vb.gui = settings["vm"]["gui"]
 
+    # auto-NAT
     vb.cpus = settings["vm"]["cpus"]
     vb.memory = settings["vm"]["memory"]
     vb.customize [
@@ -33,17 +34,9 @@ Vagrant.configure(2) do |config|
     vb.customize [ "guestproperty", "set", :id, "/VirtualBox/GuestAdd/VBoxService/--timesync-min-adjust", 100 ]
   end
 
-  # Copy the custom shutdown wrapper so that we can halt with the CLI
-  # config.vm.provision "shell", run: "always", inline: <<-SHELL
-  #   cp /vagrant/bin/shutdown /bin/shutdown
-  # SHELL
-
-  # config.vm.provision "shell", run: "always", inline: <<-SHELL
-  #   setup-apkcache /var/cache/apk
-  #   apk add --upgrade apk-tools
-  #   apk cache -v sync
-  #   apk upgrade -v
-  # SHELL
+  config.vm.provision "shell", run: "always", inline: <<-SHELL
+    apt-get update
+  SHELL
 
   config.vm.provision "shell", path: "scripts/custom.sh"
   # config.vm.provision "shell", path: "scripts/dotfiles.sh", privileged: false
