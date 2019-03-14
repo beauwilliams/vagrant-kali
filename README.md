@@ -1,12 +1,14 @@
 # vagrant-kali
 
-Kali Linux Vagrant box with some usability scripts.
+[Kali Linux][kali-linux] as a [Vagrant][vagrant] box: all the persistance of bare metal with the convenience of a live USB.
 
 * Uses the [official `offensive-security/kali-linux` Vagrant box](https://www.kali.org/news/announcing-kali-for-vagrant/) as the base box.
-* Mounts the current directory into the VM as a shared folder at `/vagrant/` automatically.
-* Vagrant auto-NATs the VM with the host machine: networking should be automatic.
+* Mounts the current directory into the VM as a shared folder at `/vagrant/`. Sync more folders at will.
+* Vagrant auto-NATs the VM with the host machine: networking should be automagic.
 
-### Usage
+Currently requires [VirtualBox][virtualbox].
+
+## Usage
 
 ```console
 $ vagrant up
@@ -25,3 +27,7 @@ root@kali:~#
 * Line endings of any config files shared to the Vagrant box should have Unix-style/LF line endings.
 * VM settings (CPU/RAM allocation, no GUI, etc.) can be changed by modifying the `Vagrantsettings.yaml`.
 * The `custom.sh` script can be modified to add packages/custom code.
+
+[kali-linux]: https://www.kali.org/
+[vagrant]: https://www.vagrantup.com/
+[virtualbox]: https://www.virtualbox.org/
