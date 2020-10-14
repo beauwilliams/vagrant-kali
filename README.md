@@ -1,4 +1,4 @@
-# vagrant-kali with SSHFS
+# vagrant-kali with Shared Folder
 
 [Kali Linux][kali-linux] as a [Vagrant][vagrant] box: all the persistance of bare metal with the convenience of a live USB.
 
