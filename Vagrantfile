@@ -8,7 +8,7 @@ $root = File.dirname(__FILE__)
 
 Vagrant.configure(2) do |config|
   config.vm.box = settings["vm"]["box"]
-  config.vm.synced_folder "/path/to/folder/on/host", "/home/vagrant", type: "sshfs"
+  config.vm.synced_folder "/Users/admin/VagrantMachines/share", "/home/vagrant", type: "sshfs"
 
   if Vagrant.has_plugin?("vagrant-timezone")
     config.timezone.value = settings["vm"]["timezone"]
