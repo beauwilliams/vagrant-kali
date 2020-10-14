@@ -1,4 +1,4 @@
-# vagrant-kali
+# vagrant-kali with SSHFS
 
 [Kali Linux][kali-linux] as a [Vagrant][vagrant] box: all the persistance of bare metal with the convenience of a live USB.
 
@@ -9,6 +9,9 @@
 Currently requires [VirtualBox][virtualbox].
 
 ## Usage
+
+Install SSHFS support for shared folder
+`vagrant plugin install vagrant-sshfs`
 
 ```console
 $ vagrant up
