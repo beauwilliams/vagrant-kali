@@ -10,9 +10,10 @@ Currently requires [VirtualBox][virtualbox].
 
 ## Usage
 
-### Setting Up SSHFS
+### OPTIONAL: Setting Up SSHFS as shared folder
 
 Install SSHFS support for shared folder `vagrant plugin install vagrant-sshfs`
+In the "VagrantFile' set 
 
 [Optional] -- If having issues with too many keys in ssh-agent i.e SSHFS mount fails, too many keys in agent
 in your ssh-config..
@@ -21,6 +22,9 @@ in your ssh-config..
 Host 127.0.0.1
   AddKeysToAgent no
 ```
+### Setting up shared folder
+
+### How to start this vagrant box
 
 ```console
 $ vagrant up
