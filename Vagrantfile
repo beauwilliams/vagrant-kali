@@ -8,13 +8,13 @@ $root = File.dirname(__FILE__)
 
 Vagrant.configure(2) do |config|
   config.vm.box = settings["vm"]["box"]
-  config.vm.synced_folder "/Users/admin/VagrantMachines/share", "/home/vagrant"
 
   if Vagrant.has_plugin?("vagrant-timezone")
     config.timezone.value = settings["vm"]["timezone"]
   end
 
   # extra mounts
+  # config.vm.synced_folder "/Users/admin/VagrantMachines/share", "/home/vagrant"
   # config.vm.synced_folder "./dotfiles", "/home/vagrant/dotfiles"
 
   config.vm.provider "virtualbox" do |vb|
