@@ -1,9 +1,9 @@
 ---
 vm:
-  box: "offensive-security/kali-linux"
+  box: "kalilinux/rolling"
   cpus: 2
   gui: true
   hostname: kali
   memory: 2048
   name: kali
-  timezone: EST
+  timezone: AEST
