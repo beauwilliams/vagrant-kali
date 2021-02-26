@@ -26,21 +26,17 @@ Host 127.0.0.1
 ### How to start this vagrant box
 
 ```console
+# Auto-build the VM
 $ vagrant up
-Bringing machine 'default' up with 'virtualbox' provider...
-==> default: Checking if box 'offensive-security/kali-linux' is up to date...
-...
+
+# Get a shell into the VM
 $ vagrant ssh
-vagrant@kali:~$ su - root
-Password:
-root@kali:~#
 
+# Suspend the VM
 $ vagrant halt
-==> default: Attempting graceful shutdown of VM...
 
-
+# Delete the VM
 $ vagrant destroy
-==> default: removing machine and deleting files
 ```
 * I keep my vagrantfiles in `~/VagrantMachines` so I recommend cloning this repo there.
 * The VM login is vagrant:vagrant (not kali:kali)
