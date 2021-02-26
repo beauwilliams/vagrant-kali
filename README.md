@@ -1,6 +1,6 @@
 # vagrant-kali with Shared Folder
 
-[Kali Linux][kali-linux] as a [Vagrant][vagrant] box: all the persistance of bare metal with the convenience of a live USB.
+![Kali Linux](https://www.kali.org/) as a ![Vagrant](https://www.vagrantup.com/) box: all the persistance of bare metal with the convenience of a live USB.
 
 * Uses the [official `offensive-security/kali-linux` Vagrant box](https://www.kali.org/news/announcing-kali-for-vagrant/) as the base box.
 * Mounts the current directory into the VM as a shared folder at `/vagrant/`. Sync more folders at will.
