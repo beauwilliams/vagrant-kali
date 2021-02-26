@@ -6,7 +6,7 @@
 * Mounts the current directory into the VM as a shared folder at `/vagrant/`. Sync more folders at will.
 * Vagrant auto-NATs the VM with the host machine: networking should be automagic.
 
-Currently requires [VirtualBox][virtualbox].
+Currently requires ![VirtualBox](https://virtualbox.org)
 
 ## Usage
 
@@ -35,6 +35,7 @@ vagrant@kali:~$ su - root
 Password:
 root@kali:~#
 ```
+* Clone this repo. I keep my vagrantfiles in `~/VagrantMachines`
 * The VM login is vagrant:vagrant (not kali:kali)
 * The first pull of the Vagrant box will take a while: Kali is ~4GB.
 * Kali's default `root:toor` login/password is still valid. If you really want to be root, `su - root`.
