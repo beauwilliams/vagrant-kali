@@ -27,16 +27,16 @@ Host 127.0.0.1
 
 ```console
 # Auto-build the VM
-$ vagrant up
+$vagrant up
 
 # Get a shell into the VM
-$ vagrant ssh
+$vagrant ssh
 
 # Suspend the VM
-$ vagrant halt
+$vagrant halt
 
 # Delete the VM
-$ vagrant destroy
+$vagrant destroy
 ```
 * I keep my vagrantfiles in `~/VagrantMachines` so I recommend cloning this repo there.
 * The VM login is vagrant:vagrant (not kali:kali)
