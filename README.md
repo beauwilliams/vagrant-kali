@@ -47,6 +47,7 @@ root@kali:~#
 
 ![screenshot](https://i.ibb.co/VWNWRdm/Screen-Shot-2021-02-27-at-7-57-59-am.png)
 
-[kali-linux]: https://www.kali.org/
-[vagrant]: https://www.vagrantup.com/
-[virtualbox]: https://www.virtualbox.org/
+### References
+kali-linux: https://www.kali.org/
+vagrant: https://www.vagrantup.com/
+virtualbox: https://www.virtualbox.org/
