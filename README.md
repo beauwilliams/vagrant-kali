@@ -43,6 +43,7 @@ root@kali:~#
 * Line endings of any config files shared to the Vagrant box should have Unix-style/LF line endings.
 * VM settings (CPU/RAM allocation, no GUI, etc.) can be changed by modifying the `Vagrantsettings.yaml`.
 * The `custom.sh` script can be modified to add packages/custom code.
+**NOTE:** Share directory is setup as so `config.vm.synced_folder "~/VagrantMachines/share/", "/share/", type: "sshfs"`
 
 ### Screenshots
 
