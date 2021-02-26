@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
   end
 
   # extra mounts
-    config.vm.synced_folder "~/share", "~/VagrantMachines/vagrant-kali/share", type: "sshfs"
+    config.vm.synced_folder "~/VagrantMachines/share/", "/share/", type: "sshfs"
   # config.vm.synced_folder "/Users/admin/VagrantMachines/share", "/home/vagrant"
   # config.vm.synced_folder "./dotfiles", "/home/vagrant/dotfiles"
 
