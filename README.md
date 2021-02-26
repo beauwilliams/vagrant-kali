@@ -43,6 +43,10 @@ root@kali:~#
 * VM settings (CPU/RAM allocation, no GUI, etc.) can be changed by modifying the `Vagrantsettings.yaml`.
 * The `custom.sh` script can be modified to add packages/custom code.
 
+### Screenshots
+
+![screenshot](https://i.ibb.co/VWNWRdm/Screen-Shot-2021-02-27-at-7-57-59-am.png)
+
 [kali-linux]: https://www.kali.org/
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/
