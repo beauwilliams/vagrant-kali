@@ -1,4 +1,4 @@
-# vagrant-kali with Shared Folder
+# Vagrant-Kali with Shared Folder Auto-Mount
 
 ![Kali Linux](https://www.kali.org/) as a ![Vagrant](https://www.vagrantup.com/) box: all the persistance of bare metal with the convenience of a live USB.
 
