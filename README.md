@@ -22,7 +22,6 @@ in your ssh-config..
 Host 127.0.0.1
   AddKeysToAgent no
 ```
-### Setting up shared folder
 
 ### How to start this vagrant box
 
