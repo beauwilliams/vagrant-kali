@@ -34,6 +34,13 @@ $ vagrant ssh
 vagrant@kali:~$ su - root
 Password:
 root@kali:~#
+
+$ vagrant halt
+==> default: Attempting graceful shutdown of VM...
+
+
+$ vagrant destroy
+==> default: removing machine and deleting files
 ```
 * I keep my vagrantfiles in `~/VagrantMachines` so I recommend cloning this repo there.
 * The VM login is vagrant:vagrant (not kali:kali)
