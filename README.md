@@ -36,6 +36,17 @@ $vagrant halt
 
 # Delete the VM
 $vagrant destroy
+
+# Some other helpful commands
+
+# Reconfigure the virtual machine after a source code change.
+$vagrant provision
+
+# Reload the virtual machine. Useful when you need to change network or synced folder settings.
+$vagrant reload
+
+
+
 ```
 * I keep my vagrantfiles in `~/VagrantMachines` so I recommend cloning this repo there.
 * The VM login is vagrant:vagrant (not kali:kali)
