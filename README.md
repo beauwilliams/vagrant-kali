@@ -35,7 +35,7 @@ vagrant@kali:~$ su - root
 Password:
 root@kali:~#
 ```
-* Clone this repo. I keep my vagrantfiles in `~/VagrantMachines`
+* I keep my vagrantfiles in `~/VagrantMachines` so I recommend cloning this repo there.
 * The VM login is vagrant:vagrant (not kali:kali)
 * The first pull of the Vagrant box will take a while: Kali is ~4GB.
 * Kali's default `root:toor` login/password is still valid. If you really want to be root, `su - root`.
