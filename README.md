@@ -44,7 +44,7 @@ root@kali:~#
 * VM settings (CPU/RAM allocation, no GUI, etc.) can be changed by modifying the `Vagrantsettings.yaml`.
 * The `custom.sh` script can be modified to add packages/custom code.
 
-**NOTE:** Share directory is setup as so `config.vm.synced_folder "~/VagrantMachines/share/", "/share/", type: "sshfs"`
+**NOTE:** Share directory is setup like so `config.vm.synced_folder "~/VagrantMachines/share/", "/share/", type: "sshfs"`
 
 ### Screenshots
 
