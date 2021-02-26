@@ -35,7 +35,7 @@ vagrant@kali:~$ su - root
 Password:
 root@kali:~#
 ```
-
+* The VM login is vagrant:vagrant (not kali:kali)
 * The first pull of the Vagrant box will take a while: Kali is ~4GB.
 * Kali's default `root:toor` login/password is still valid. If you really want to be root, `su - root`.
 * Updating Kali's full suite of packages with `apt-get upgrade` takes about 30 years on a fresh box, so plan accordingly.
@@ -46,6 +46,12 @@ root@kali:~#
 ### Screenshots
 
 ![screenshot](https://i.ibb.co/VWNWRdm/Screen-Shot-2021-02-27-at-7-57-59-am.png)
+
+**You will also see the full VM in Vbox and can be launched normally from there**
+
+![screenshot](https://i.ibb.co/7K0r97S/Screen-Shot-2021-02-27-at-8-03-53-am.png)
+
+![screenshot](https://i.ibb.co/Z6MY3ZR/Screen-Shot-2021-02-27-at-8-02-37-am.png)
 
 ### References
 - kali-linux: https://www.kali.org/
